@@ -439,7 +439,7 @@ The entity restricts the transmission, movement, and removal of information to a
 ---
 
 The outlined SOC 2 controls mapping provides a comprehensive framework for ensuring compliance and security across AWS services. By adhering to these controls, organizations can maintain a robust security posture, protect sensitive data, and ensure the integrity and availability of their systems.
-
+```bash
 AWS_Compliance_Benchmarks/
 └── SOC_2/
     ├── CC1_Common_Criteria_Related_to_Control_Environment/
@@ -820,3 +820,136 @@ SOC2_Controls/
 │   ├── C1.2_Disposal_of_Confidential_Information/
 │   │   ├── S3_Buckets_Lifecycle_Policies_Configured.txt
 │   │   ├── S3_Bucket_Versioning_Enabled.txt
+```
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![image](https://github.com/user-attachments/assets/3f976456-b793-4386-b9d5-209ec258720f)
+
+## AWS to GCP Service Comparison
+
+| **AWS Service**                          | **GCP Service**                          |
+|------------------------------------------|------------------------------------------|
+| aws_accessanalyzer_analyzer              | gcp_alloydb_cluster                      |
+| aws_accessanalyzer_finding               | gcp_alloydb_instance                     |
+| aws_account                              | gcp_apikeys_key                          |
+| aws_account_alternate_contact            | gcp_app_engine_application               |
+| aws_account_contact                      | gcp_artifact_registry_repository         |
+| aws_acm_certificate                      | gcp_audit_policy                         |
+| aws_acmpca_certificate_authority         | gcp_bigquery_dataset                     |
+| aws_amplify_app                          | gcp_bigquery_job                         |
+| aws_api_gateway_api_key                  | gcp_bigquery_table                       |
+| aws_api_gateway_authorizer               | gcp_bigtable_instance                    |
+| aws_api_gateway_domain_name              | gcp_billing_account                      |
+| aws_api_gateway_method                   | gcp_billing_budget                       |
+| aws_api_gateway_rest_api                 | gcp_cloud_asset                          |
+| aws_api_gateway_stage                    | gcp_cloud_identity_group                 |
+| aws_api_gateway_usage_plan               | gcp_cloud_identity_group_membership      |
+| aws_api_gatewayv2_api                    | gcp_cloud_run_service                    |
+| aws_api_gatewayv2_domain_name            | gcp_cloudfunctions_function              |
+| aws_api_gatewayv2_integration            | gcp_compute_address                      |
+| aws_api_gatewayv2_route                  | gcp_compute_autoscaler                   |
+| aws_api_gatewayv2_stage                  | gcp_compute_backend_bucket               |
+| aws_appautoscaling_policy                | gcp_compute_backend_service              |
+| aws_appautoscaling_target                | gcp_compute_disk                         |
+| aws_appconfig_application                | gcp_compute_disk_metric_read_ops         |
+| aws_appstream_fleet                      | gcp_compute_disk_metric_read_ops_daily   |
+| aws_appstream_image                      | gcp_compute_disk_metric_read_ops_hourly  |
+| aws_appsync_graphql_api                  | gcp_compute_disk_metric_write_ops        |
+| aws_athena_query_execution               | gcp_compute_disk_metric_write_ops_daily  |
+| aws_athena_workgroup                     | gcp_compute_disk_metric_write_ops_hourly |
+| aws_auditmanager_assessment              | gcp_compute_firewall                     |
+| aws_auditmanager_control                 | gcp_compute_forwarding_rule              |
+| aws_auditmanager_evidence                | gcp_compute_global_address               |
+| aws_auditmanager_evidence_folder         | gcp_compute_global_forwarding_rule       |
+| aws_auditmanager_framework               | gcp_compute_ha_vpn_gateway               |
+| aws_availability_zone                    | gcp_compute_image                        |
+| aws_backup_framework                     | gcp_compute_instance                     |
+| aws_backup_job                           | gcp_compute_instance_group               |
+| aws_backup_legal_hold                    | gcp_compute_instance_metric_cpu_utilization |
+| aws_backup_plan                          | gcp_compute_instance_metric_cpu_utilization_daily |
+| aws_backup_protected_resource            | gcp_compute_instance_metric_cpu_utilization_hourly |
+| aws_backup_recovery_point                | gcp_compute_instance_template           |
+| aws_backup_report_plan                   | gcp_compute_machine_image               |
+| aws_backup_selection                     | gcp_compute_machine_type                |
+| aws_backup_vault                         | gcp_compute_network                     |
+| aws_cloudcontrol_resource                | gcp_compute_node_group                  |
+| aws_cloudformation_stack                 | gcp_compute_node_template               |
+| aws_cloudformation_stack_resource        | gcp_compute_project_metadata            |
+| aws_cloudformation_stack_set             | gcp_compute_region                      |
+| aws_cloudfront_cache_policy              | gcp_compute_resource_policy            |
+| aws_cloudfront_distribution              | gcp_compute_route                       |
+| aws_cloudfront_function                  | gcp_compute_router                      |
+| aws_cloudfront_origin_access_identity    | gcp_compute_snapshot                    |
+| aws_cloudfront_origin_request_policy     | gcp_compute_ssl_policy                  |
+| aws_cloudfront_response_headers_policy   | gcp_compute_subnetwork                  |
+| aws_cloudsearch_domain                   | gcp_compute_target_https_proxy          |
+| aws_cloudtrail_channel                   | gcp_compute_target_pool                 |
+| aws_cloudtrail_event_data_store          | gcp_compute_target_ssl_proxy            |
+| aws_cloudtrail_import                    | gcp_compute_target_vpn_gateway          |
+| aws_cloudtrail_lookup_event              | gcp_compute_url_map                     |
+| aws_cloudtrail_query                     | gcp_compute_vpn_tunnel                  |
+| aws_cloudtrail_trail                     | gcp_compute_zone                        |
+| aws_cloudtrail_trail_event               | gcp_dataproc_cluster                    |
+| aws_cloudwatch_alarm                     | gcp_dns_managed_zone                    |
+| aws_cloudwatch_log_event                 | gcp_dns_policy                          |
+| aws_cloudwatch_log_group                 | gcp_dns_record_set                      |
+| aws_cloudwatch_log_metric_filter         | gcp_iam_policy                           |
+| aws_cloudwatch_log_resource_policy       | gcp_iam_role                             |
+| aws_cloudwatch_log_stream                | gcp_kms_key                              |
+| aws_cloudwatch_log_subscription_filter   | gcp_kms_key_ring                         |
+| aws_cloudwatch_metric                    | gcp_kms_key_version                      |
+| aws_cloudwatch_metric_data_point         | gcp_kubernetes_cluster                  |
+| aws_cloudwatch_metric_statistic_data_point | gcp_kubernetes_node_pool               |
+| aws_codeartifact_domain                  | gcp_logging_bucket                      |
+| aws_codeartifact_repository              | gcp_logging_exclusion                   |
+| aws_codebuild_build                      | gcp_logging_log_entry                   |
+| aws_codebuild_project                    | gcp_logging_metric                      |
+| aws_codebuild_source_credential          | gcp_logging_sink                        |
+| aws_codecommit_repository                | gcp_monitoring_alert_policy             |
+| aws_codedeploy_app                       | gcp_monitoring_group                    |
+| aws_codedeploy_deployment_config         | gcp_monitoring_notification_channel     |
+| aws_codedeploy_deployment_group          | gcp_organization                        |
+| aws_codepipeline_pipeline                | gcp_project                             |
+| aws_codestar_notification_rule           | gcp_project_organization_policy         |
+| aws_cognito_identity_pool                | gcp_project_service                     |
+| aws_cognito_identity_provider            | gcp_pubsub_snapshot                      |
+| aws_cognito_user_pool                    | gcp_pubsub_subscription                 |
+| aws_config_aggregate_authorization       | gcp_pubsub_topic                         |
+| aws_config_configuration_recorder        | gcp_redis_instance                       |
+| aws_config_conformance_pack              | gcp_secret_manager_secret                |
+| aws_config_retention_configuration       | gcp_service_account                      |
+| aws_config_rule                          | gcp_service_account_key                 |
+| aws_cost_by_account_daily                | gcp_sql_backup                           |
+| aws_cost_by_account_monthly              | gcp_sql_database                         |
+| aws_cost_by_record_type_daily            | gcp_sql_database_instance                |
+| aws_cost_by_record_type_monthly          | gcp_sql_database_instance_metric_connections |
+| aws_cost_by_service_daily                | gcp_sql_database_instance_metric_connections_daily |
+| aws_cost_by_service_monthly              | gcp_sql_database_instance_metric_connections_hourly |
+| aws_cost_by_service_usage_type_daily     | gcp_sql_database_instance_metric_cpu_utilization |
+| aws_cost_by_service_usage_type_monthly   | gcp_sql_database_instance_metric_cpu_utilization_daily |
+| aws_cost_by_tag                           | gcp_sql_database_instance_metric_cpu_utilization_hourly |
+| aws_cost_forecast_daily                  | gcp_storage_bucket                       |
+| aws_cost_forecast_monthly                | gcp_storage_object                       |
+| aws_cost_usage                            | gcp_tag_binding                          |
+| aws_dax_cluster                           | gcp_vertex_ai_endpoint                   |
+| aws_dax_parameter_group                   | gcp_vertex_ai_feature                    |
+| aws_dax_subnet_group                      | gcp_vertex_ai_model                      |
+| aws_directconnect_connection              | gcp_vertex_ai_model_deployment           |
+| aws_directconnect_private_virtual_interface | gcp_vertex_ai_model_metadata          |
+| aws_directconnect_public_virtual_interface | gcp_vertex_ai_notebook                 |
+| aws_directconnect_transit_virtual_interface | gcp_vertex_ai_pipeline                 |
+| aws_dms_endpoint                           | gcp_vertex_ai_tensorboard               |
+| aws_dms_event_subscription                | gcp_vertex_ai_training_pipeline         |
+| aws_dms_replication_instance              | gcp_vertex_ai_training_pipeline_template |
+| aws_dms_replication_task                  | gcp_vpc_network                         |
+| aws_dms_replication_task_assessment       | gcp_vpc_network_peering                 |
+| aws_dms_source_endpoint                   | gcp_vpc_subnetwork                       |
+| aws_dms_target_endpoint                   | gcp_vpn_tunnel                           |
+| aws_dynamodb_table                        | gcp_workspace                           |
+| aws_dynamodb_table_metric                 | gcp_zone                                 |
+| aws_dynamodb_table_stream                 | gcp_zones                                |
+-----------------------------------------------------------------------------------------
+
+```
+
+```
