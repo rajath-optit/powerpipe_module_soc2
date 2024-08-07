@@ -62,6 +62,7 @@ Documentation available at https://steampipe.io/docs
 ### Run your first query...
 steampipe query "select name from steampipe_registry_plugin;"
 ### Result:
+```
 +----------------------------+
 | name                       |
 +----------------------------+
@@ -208,8 +209,8 @@ steampipe query "select name from steampipe_registry_plugin;"
 | turbot/planetscale         |
 | turbot/scaleway            |
 | turbot/rss                 |
-
-
+------------------------------
+```
 # installing plugin and using query in steampipe
 
 ### Explore
@@ -439,6 +440,7 @@ The entity restricts the transmission, movement, and removal of information to a
 ---
 
 The outlined SOC 2 controls mapping provides a comprehensive framework for ensuring compliance and security across AWS services. By adhering to these controls, organizations can maintain a robust security posture, protect sensitive data, and ensure the integrity and availability of their systems.
+
 ```bash
 AWS_Compliance_Benchmarks/
 └── SOC_2/
@@ -951,5 +953,231 @@ SOC2_Controls/
 -----------------------------------------------------------------------------------------
 
 ```
+Name: Look for similarly named controls.
+Description: Compare descriptions to identify controls that address the same or similar security or compliance concerns.
+
+Manual Matching:
+
+Go through the lists and match controls based on name and description.
+Note any controls that are clearly equivalent or closely related.
+Automated Tools:
+
+Consider using text comparison tools or scripts to assist with the comparison process.
+Tools like diff for Unix-based systems, or online text comparison tools might be helpful.
+
+Spreadsheet Software: Microsoft Excel, Google Sheets.
+
+----------------------------------
+
+now the task that i was assigned is
+
+Task Overview:
+
+You have been assigned to compare and align the controls between AWS and GCP. The goal is to identify matching controls and list them to contribute to the PowerPipe GitHub repository created by Torbot.
+
+Details:
+
+AWS Controls: There are over 400 controls available.
+GCP Controls: There are currently 104 controls listed.
+Objectives:
+
+Compare Controls:
+
+Identify and match controls between AWS and GCP based on their names and descriptions.
+Create a comprehensive list of matched controls.
+Contribute to GitHub:
+
+Use the matched controls list to contribute to the PowerPipe GitHub repository, which is maintained by Torbot.
+SOC 2 Controls for GCP:
+
+Currently, SOC 2 controls are available for AWS but not for GCP.
+You will need to create and add SOC 2 controls for GCP, as this has not been done yet.
+Deliverables:
+
+A detailed list of matching controls between AWS and GCP.
+Added SOC 2 controls for GCP in the PowerPipe GitHub repository.
+
+------------------------------------------------------------------------
+
+
+To tackle this task, you can follow these steps to compare and align the controls between AWS and GCP, and contribute to the PowerPipe GitHub repository:
+
+### 1. **Gather Control Lists**
+
+1. **AWS Controls**: Obtain the complete list of AWS controls. If you don’t have it yet, you might be able to find it in AWS documentation or compliance reports.
+
+2. **GCP Controls**: Similarly, gather the list of GCP controls. Check GCP's compliance and security documentation.
+
+### 2. **Create a Comparison Framework**
+
+1. **Define Matching Criteria**:
+   - **Name**: Look for similarly named controls.
+   - **Description**: Compare descriptions to identify controls that address the same or similar security or compliance concerns.
+
+2. **Build a Mapping Template**:
+   - Use a spreadsheet to list AWS controls and their descriptions.
+   - Create columns for GCP controls and descriptions to align with AWS controls.
+
+### 3. **Compare Controls**
+
+1. **Manual Matching**:
+   - Go through the lists and match controls based on name and description.
+   - Note any controls that are clearly equivalent or closely related.
+
+2. **Automated Tools**:
+   - Consider using text comparison tools or scripts to assist with the comparison process.
+   - Tools like `diff` for Unix-based systems, or online text comparison tools might be helpful.
+
+### 4. **Document Matched Controls**
+
+1. **Create a Comprehensive List**:
+   - Document each matched pair of AWS and GCP controls in a clear and structured format.
+   - Include details such as control names, descriptions, and any relevant comments.
+
+2. **Prepare for GitHub Contribution**:
+   - Ensure the list is formatted according to the repository’s contribution guidelines.
+
+### 5. **Add SOC 2 Controls for GCP**
+
+1. **Identify SOC 2 Controls**:
+   - Research SOC 2 compliance requirements and identify relevant controls for GCP.
+
+2. **Create SOC 2 Controls Documentation**:
+   - Document SOC 2 controls specific to GCP.
+   - Ensure these controls address the same aspects as SOC 2 controls for AWS.
+
+### 6. **Contribute to GitHub**
+
+1. **Prepare Pull Request**:
+   - Fork the PowerPipe GitHub repository if you haven't already.
+   - Add the matched controls list and SOC 2 controls for GCP to the appropriate files in your fork.
+
+2. **Submit Pull Request**:
+   - Create a pull request with a detailed description of the changes and the rationale behind them.
+   - Follow any additional guidelines provided by the repository maintainers.
+
+### Sample Spreadsheet Template
+
+| AWS Control Name | AWS Control Description | GCP Control Name | GCP Control Description | Comments |
+|------------------|--------------------------|------------------|--------------------------|----------|
+| AWS-Control-1    | Description of AWS Control 1 | GCP-Control-1    | Description of GCP Control 1 | Matched based on similar functionality |
+| AWS-Control-2    | Description of AWS Control 2 | GCP-Control-2    | Description of GCP Control 2 | Not an exact match but addresses similar concerns |
+
+### Tools and Resources
+
+- **Text Comparison Tools**: `diff`, WinMerge, or online text comparison tools.
+- **Spreadsheet Software**: Microsoft Excel, Google Sheets.
+- **GitHub**: For contributing and managing pull requests.
+
+If you need help with any specific part of this process, just let me know!
+```
 
 ```
+[completed task]
+-finding similarity between aws and gcp and listing them in exel.
+ 
+ 
+[next tasks]
+- i have listed similarities, as per names were matching [accuracy check has not yet complete and few corrections has to be done yet] 
+
+-this above colomn list has to be added, check link " https://github.com/turbot/steampipe-mod-aws-compliance/tree/v0.96/soc_2 " 
+in same way gcp soc2 will be created in this repo " https://github.com/rajath-optit/powerpipe_module_soc2/new/main?readme=1 "
+ 
+PS: 
+AWS SOC2/: Main directory for SOC 2 compliance benchmarks.
+CC1_Control_Environment/: Contains files related to the control environment.
+CC2_Communication_Information/: Contains files related to communication and information.
+CC3_Risk_Assessment/: Contains files related to risk assessment.
+CC4_Monitoring_Activities/: Contains files related to monitoring activities.
+CC6_Access_Security/: Contains files related to logical and physical access.
+CC7_System_Operations/: Contains files related to system operations.
+CC8_Change_Management/: Contains files related to change management.
+A1_Availability/: Contains files related to availability.
+C1_Confidentiality/: Contains files related to confidentiality.
+we create file and use the extension ".sp" which means steampipe has shown in below screenshot. [This hcl code help generate aws complience reports, after sequentially adding required table in side steam pipe template.] 
+```
+
+Here are the detailed, step-by-step PowerPipe GitHub repository.
+### 1. **Fork the Repository**
+
+1. **Go to the PowerPipe GitHub Repository**:
+   - Navigate to the [PowerPipe repository](https://github.com/Torbot/powerpipe) on GitHub.
+
+2. **Fork the Repository**:
+   - Click the **Fork** button at the top right corner of the repository page.
+   - This creates a copy of the repository under your GitHub account.
+
+### 2. **Clone Your Fork**
+
+1. **Clone the Forked Repository**:
+   - Open your terminal or command prompt.
+   - Run the following command to clone your fork locally:
+     ```bash
+     git clone https://github.com/YOUR_USERNAME/powerpipe.git
+     ```
+   - Replace `YOUR_USERNAME` with your GitHub username.
+
+2. **Navigate to the Repository Directory**:
+   - Change directory to the cloned repository:
+     ```bash
+     cd powerpipe
+     ```
+
+### 3. **Create a New Branch**
+
+1. **Create a New Branch**:
+   - It’s good practice to create a new branch for your changes. Run:
+     ```bash
+     git checkout -b compare-controls
+     ```
+
+### 4. **Prepare Your Changes**
+
+1. **Add Matched Controls**:
+   - Create or update files in your local repository to include the list of matched controls between AWS and GCP.
+   - Ensure the formatting aligns with the repository’s guidelines.
+
+2. **Add SOC 2 Controls for GCP**:
+   - Document SOC 2 controls for GCP in the repository, following the structure and format of existing SOC 2 controls for AWS.
+
+### 5. **Commit Your Changes**
+
+1. **Stage Your Changes**:
+   - Add the files you’ve modified or created:
+     ```bash
+     git add .
+     ```
+
+2. **Commit Your Changes**:
+   - Commit your changes with a descriptive message:
+     ```bash
+     git commit -m "Added matched controls between AWS and GCP and SOC 2 controls for GCP"
+     ```
+
+### 6. **Push Your Changes**
+
+1. **Push to Your Fork**:
+   - Push the changes to your forked repository on GitHub:
+     ```bash
+     git push origin compare-controls
+     ```
+
+### 7. **Create a Pull Request**
+
+1. **Go to the GitHub Repository**:
+   - Navigate back to the PowerPipe repository on GitHub.
+
+2. **Open a Pull Request**:
+   - Click the **Pull Requests** tab.
+   - Click the **New Pull Request** button.
+   - Choose the `compare-controls` branch from your fork as the source branch and the main branch of the original repository as the target branch.
+   - Add a title and description for your pull request, summarizing the changes you’ve made and why they are important.
+
+3. **Submit the Pull Request**:
+   - Click the **Create Pull Request** button.
+
+### 8. **Follow Up**
+
+1. **Monitor Your Pull Request**:
+   - Watch for comments or review requests from the repository maintainers.
+   - Respond to feedback or make any necessary changes.
